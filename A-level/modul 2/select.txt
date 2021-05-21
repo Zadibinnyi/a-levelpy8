@@ -1,0 +1,3 @@
+select case when sex = 'm' then concat ('We have ', count(*), ' boys!') when sex = 'f' then concat ('We have ', count(*), ' girls!') end from users group by sex;
+
+select case when sex = 'm' then concat ('This is ', name, ' he has email ', email) when sex = 'f' then concat ('This is ', name, ' she has email ', email) end from users;
